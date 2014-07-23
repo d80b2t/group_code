@@ -1,0 +1,36 @@
+
+
+git Notes, dead easy... 
+
+
+To Check-out:
+   > git init
+   > git clone [url] 
+     e.g. 
+     > git clone https://github.com/crazygirl9991/SeniorResearch
+
+
+Status check:
+   > git status
+
+
+Update your local branch:
+   > git pull
+
+
+To Add new files/material:
+   > git add
+   > git commit -m "[descriptive message]"
+
+
+To then place on repository:
+   > git push 
+
+
+Useful URLs
+================================================
+https://help.github.com/articles/git-cheatsheet
+	github-git-cheat-sheet.pdf 
+
+https://github.com/AlexZeitler/gitcheatsheet
+
