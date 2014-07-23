@@ -17,10 +17,19 @@ Status check:
 Update your local branch:
    > git pull
 
+NPR NOTE: ARGH!!
+What's the difference between 
+    > git fetch
+followed by
+    > git merge
+and
+    > git pull
+
 
 To Add new files/material:
    > git add
    > git commit -m "[descriptive message]"
+
 
 
 To then place on repository:
