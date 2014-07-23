@@ -29,6 +29,7 @@ and
 To Add new files/material:
    > git add
    > git commit -m "[descriptive message]"
+   > git commit -a -m "[descriptive message]"
 
 
 
