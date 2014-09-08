@@ -15,14 +15,33 @@ To run:
 making sure you have an up to date version of e.g. astropy, numpy etc. 
 
 
+
 quorrel_five_perl.f90
 ================================================================================
 Some "ancient" FORTRAN 90 code from NPR that also calculates the 2ptCF. 
 
 For the sake of me, I can not recall how the heck to compile this code right now.... (!!!)
 
-open(1,file='../data/DR5QSO_uni_data.dat')
-open(2,file='../randoms/randoms_dat/randoms_npr_UNIFORM.dat')
+You'll need, unsurprisingly, a DATA file and a RANDOM file. 
+For example, for the SDSS DR5 Quasar Clustering work (e.g. Ross et al. 2009; Shen et al. 2009) we had:
+    open(1,file='../data/DR5QSO_uni_data.dat')
+    open(2,file='../randoms/randoms_dat/randoms_npr_UNIFORM.dat')
+with
+	> cksum DR5QSO_uni_data.dat
+3050156861 2483520 DR5QSO_uni_data.dat
+	> cksum randoms_npr_UNIFORM.dat
+4147955799 65000000 randoms_npr_UNIFORM.dat
+
+For 2SLAQ LRGs it should be something such as:
+    3yr_obj_v4_Sample8_nota01ao2s01_radecz.cat
+    rand_LRG_Sm8_spe.dat
+
+SO!!
+Just complied the code on my MacBook Pro with:
+     $group_code/Clustering > gfortran tabulate_dist.f search_dist.f quorrel_five_perl.f90 -o quorrel_five_perl.x
+
+
+    
 
    
 
