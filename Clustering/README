@@ -1,0 +1,31 @@
+
+Some Clustering Codes 
+================================================================================
+	Authors: J. Timlin and N. Ross. 
+
+
+LSS_Clustering.py
+================================================================================
+Python code being written and updated to calculate the 2pt correlation function 
+of e.g. the SDSS-III BOSS
+
+To run:
+   > python LSS_Clustering.py
+
+making sure you have an up to date version of e.g. astropy, numpy etc. 
+
+
+quorrel_five_perl.f90
+================================================================================
+Some "ancient" FORTRAN 90 code from NPR that also calculates the 2ptCF. 
+
+For the sake of me, I can not recall how the heck to compile this code right now.... (!!!)
+
+open(1,file='../data/DR5QSO_uni_data.dat')
+open(2,file='../randoms/randoms_dat/randoms_npr_UNIFORM.dat')
+
+   
+
+
+
+
