@@ -1,0 +1,42 @@
+> gfortran -v tabulate_dist.f search_dist.f correl_five_perl.f90 -o correl_five_perl.x
+Driving: gfortran -mmacosx-version-min=10.8.5 -v tabulate_dist.f search_dist.f correl_five_perl.f90 -o correl_five_perl.x -lgfortran -shared-libgcc
+Using built-in specs.
+Target: i386-apple-darwin8.10.1
+Configured with: /tmp/gfortran-20090604/ibin/../gcc/configure --prefix=/usr/local/gfortran --enable-languages=c,fortran --with-gmp=/tmp/gfortran-20090604/gfortran_libs --enable-bootstrap
+Thread model: posix
+gcc version 4.5.0 20090604 (experimental) [trunk revision 148180] (GCC) 
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
+ /usr/local/gfortran/libexec/gcc/i386-apple-darwin8.10.1/4.5.0/f951 tabulate_dist.f -ffixed-form -fPIC -quiet -dumpbase tabulate_dist.f -mmacosx-version-min=10.8.5 -mtune=generic -auxbase tabulate_dist -version -fintrinsic-modules-path /usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0/finclude -o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//cc9HimXq.s
+GNU Fortran (GCC) version 4.5.0 20090604 (experimental) [trunk revision 148180] (i386-apple-darwin8.10.1)
+	compiled by GNU C version 4.5.0 20090604 (experimental) [trunk revision 148180], GMP version 4.3.1, MPFR version 2.4.1-p5
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+GNU Fortran (GCC) version 4.5.0 20090604 (experimental) [trunk revision 148180] (i386-apple-darwin8.10.1)
+	compiled by GNU C version 4.5.0 20090604 (experimental) [trunk revision 148180], GMP version 4.3.1, MPFR version 2.4.1-p5
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
+ as -arch i386 -force_cpusubtype_ALL -o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//ccKdvO3n.o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//cc9HimXq.s
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
+ /usr/local/gfortran/libexec/gcc/i386-apple-darwin8.10.1/4.5.0/f951 search_dist.f -ffixed-form -fPIC -quiet -dumpbase search_dist.f -mmacosx-version-min=10.8.5 -mtune=generic -auxbase search_dist -version -fintrinsic-modules-path /usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0/finclude -o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//cc9HimXq.s
+GNU Fortran (GCC) version 4.5.0 20090604 (experimental) [trunk revision 148180] (i386-apple-darwin8.10.1)
+	compiled by GNU C version 4.5.0 20090604 (experimental) [trunk revision 148180], GMP version 4.3.1, MPFR version 2.4.1-p5
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+GNU Fortran (GCC) version 4.5.0 20090604 (experimental) [trunk revision 148180] (i386-apple-darwin8.10.1)
+	compiled by GNU C version 4.5.0 20090604 (experimental) [trunk revision 148180], GMP version 4.3.1, MPFR version 2.4.1-p5
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
+ as -arch i386 -force_cpusubtype_ALL -o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//ccSxgPQH.o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//cc9HimXq.s
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
+ /usr/local/gfortran/libexec/gcc/i386-apple-darwin8.10.1/4.5.0/f951 correl_five_perl.f90 -fPIC -quiet -dumpbase correl_five_perl.f90 -mmacosx-version-min=10.8.5 -mtune=generic -auxbase correl_five_perl -version -fintrinsic-modules-path /usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0/finclude -o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//cc9HimXq.s
+GNU Fortran (GCC) version 4.5.0 20090604 (experimental) [trunk revision 148180] (i386-apple-darwin8.10.1)
+	compiled by GNU C version 4.5.0 20090604 (experimental) [trunk revision 148180], GMP version 4.3.1, MPFR version 2.4.1-p5
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+GNU Fortran (GCC) version 4.5.0 20090604 (experimental) [trunk revision 148180] (i386-apple-darwin8.10.1)
+	compiled by GNU C version 4.5.0 20090604 (experimental) [trunk revision 148180], GMP version 4.3.1, MPFR version 2.4.1-p5
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
+ as -arch i386 -force_cpusubtype_ALL -o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//ccMgkCzC.o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//cc9HimXq.s
+COMPILER_PATH=/usr/local/gfortran/libexec/gcc/i386-apple-darwin8.10.1/4.5.0/:/usr/local/gfortran/libexec/gcc/i386-apple-darwin8.10.1/4.5.0/:/usr/local/gfortran/libexec/gcc/i386-apple-darwin8.10.1/:/usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0/:/usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/
+LIBRARY_PATH=/usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0/:/usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0/../../../:/usr/lib/
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
+ /usr/local/gfortran/libexec/gcc/i386-apple-darwin8.10.1/4.5.0/collect2 -dynamic -arch i386 -macosx_version_min 10.8.5 -weak_reference_mismatches non-weak -o correl_five_perl.x -lcrt1.10.5.o -L/usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0 -L/usr/local/gfortran/lib/gcc/i386-apple-darwin8.10.1/4.5.0/../../.. /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//ccKdvO3n.o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//ccSxgPQH.o /var/folders/y9/twfc9zz104bbyg90rrh3t23h0000gp/T//ccMgkCzC.o -lgfortran -lgcc_s.10.5 -lgcc -lSystem
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.5' '-v' '-o' 'correl_five_perl.x' '-shared-libgcc' '-mtune=generic'
