@@ -179,7 +179,7 @@ write(*,*) choice, '(choice)', choice_two, '(choice_two) ', choice_three, ' (cho
 
 
 !do jack = 8,32
-jack = 35
+jack = 36
 write(*,*) 'jack',jack
 
 if(jack .eq. 1) then 
@@ -393,6 +393,12 @@ elseif(jack .eq. 35) then
    open(9,file='k_output_jack_perl_full_newcor_v2.1.dat')
    open(18,file='k2d_output_jack_perl_full_newcor_v2.1.dat')
    open(27,file='Kcap_output_jack_perl_full_newcor_v2.1.dat')
+elseif(jack .eq. 36) then 
+   open(1,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz.dat')
+   open(2,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz_randoms.cat')
+   open(9,file='k_output_jack_perl_full_temp.dat')
+   open(18,file='k2d_output_jack_perl_full_temp.dat')
+   open(27,file='Kcap_output_jack_perl_full_temp.dat')
 end if
 
 write(*,*) 'jack',jack
