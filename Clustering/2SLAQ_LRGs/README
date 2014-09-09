@@ -1,0 +1,24 @@
+
+
+Notes on O/P files #1.
+==============================================
+
+k_output files are xi(s) measurements. 
+
+k2d_output files are xi(sigma,pi) measurements. 
+
+Kcap_output are wp(sigma) measurements. 
+
+
+
+
+*_2SLAQ_LRGs_08092014.dat
+===================================
+Calculated from:
+   open(1,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz.dat')
+   open(2,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz_randoms.cat')
+which have 8656 data and 173120 randoms respectivley. 
+
+
+     
+
