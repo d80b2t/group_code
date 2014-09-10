@@ -17,6 +17,8 @@ This file will contain the smallest scale distances. To get the larger distances
 Clustering_cartesian_3.py
 These files will append to 'Pair_counts_2slaq_small.txt' and should be run in the order shown above. 
 
+If running in parallel, be sure that the order is preserved!!
+
 From here, run the code Landy-Szalay.py file to generate the plots of the correlation function.
 
 
