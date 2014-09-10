@@ -1,0 +1,23 @@
+Instructions to use this code::
+
+First run the Generate_cartesian.py code by typing
+
+> python Generate_cartesian.py
+
+This will convert the RA, DEC, Z from the input data (3yr_obj_v4_Sample8_nota01ao2s01_radecz.cat) and random (rand_LRG_Sm8_spe.dat) 
+files to cartesian coordinates. The output file will be 'Cartesian_coords.fits'
+
+After this, run the code Clustering_cartesian.py by typing
+
+>python Clustering_cartesian.py
+
+This will find the dd, rr, dr pairs and write them to a file 'Pair_counts_2slaq_small.txt'
+
+This file will contain the smallest scale distances. To get the larger distances, run the files Clustering_cartesian_1.py, Clustering_cartesian_2.py,
+Clustering_cartesian_3.py
+These files will append to 'Pair_counts_2slaq_small.txt' and should be run in the order shown above. 
+
+From here, run the code Landy-Szalay.py file to generate the plots of the correlation function.
+
+
+
