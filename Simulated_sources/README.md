@@ -16,17 +16,17 @@ What does the code do right now?
 
 At the moment, the code will:
 
-  -Generate random centroid positions
+ -Generate random centroid positions
 
-  -Generate random amplitude for the gaussian
+ -Generate random amplitude for the gaussian
 
-  -Evaluate the 2D Gaussian function out to a specified radius
+ -Evaluate the 2D Gaussian function out to a specified radius
 
-  -Calculate the total flux in the Gaussian (summing the values from the previous step)
+ -Calculate the total flux in the Gaussian (summing the values from the previous step)
 
-  -Convert that to AB mags
+ -Convert that to AB mags
 
-  -Write a file containing the random RA DEC MAG and FLUX values
+ -Write a file containing the random RA DEC MAG and FLUX values
 
-  -Output a new file which is the sum of the input mosaic file and the matrix created with the gaussian sources(all other cells are 0)
+ -Output a new file which is the sum of the input mosaic file and the matrix created with the gaussian sources(all other cells are 0)
   
