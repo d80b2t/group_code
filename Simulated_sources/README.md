@@ -22,7 +22,7 @@ At the moment, the code will:
 
  -Evaluate the 2D Gaussian function out to a specified radius
 
- -Calculate the total flux in the Gaussian (summing the values from the previous step)
+ -Calculate the total flux (summing the values from the previous step)
 
  -Convert that to AB mags
 
