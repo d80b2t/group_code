@@ -13,12 +13,19 @@ Kcap_output are wp(sigma) measurements.
 
 
 *_2SLAQ_LRGs_08092014.dat
-===================================
+======================================================================
 Calculated from:
    open(1,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz.dat')
    open(2,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz_randoms.cat')
 which have 8656 data and 173120 randoms respectivley. 
 
 
-     
+k_output_jack_perl_full_20140910     
+===================================
+calculated from: 
+   open(1,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz.dat')
+   open(2,file='3yr_obj_v4_Sample8_nota01ao2s01_xyz_randoms.cat')
+with the
+     open(33, file='w_theta_2SLAQ_Sam8_v2.dat')
+small-scale correction applied. 
 
