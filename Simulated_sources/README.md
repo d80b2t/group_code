@@ -8,9 +8,9 @@ The code is documented, so have a look at the file before running, however, you 
 2. The empty version of the position.ascii file (which you will need to clear before running as well)
 
  - Important note: The first line in the position.ascii file should ALWAYS be as follows::
-   # RA DEC MAG FLUX
+   # RA DEC MAG FLUX  Any different will result in an odd output
+
  
- -any different will result in an odd output
 
 What does the code do right now?
 
