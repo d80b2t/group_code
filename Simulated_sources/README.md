@@ -14,7 +14,7 @@ The code is documented, so have a look at the file before running, however, you 
 
 What does the code do right now?
 
--At the moment, the code will:
+At the moment, the code will:
 
   -Generate random centroid positions
 
