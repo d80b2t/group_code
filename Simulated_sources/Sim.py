@@ -18,8 +18,12 @@ def simulated(zeromat,dat,header):
 	#Create random pixel values (x,y) around which we'll build the gaussian
 	yc=np.random.randint(0,np.shape(dat)[0]-1)
 	xc=np.random.randint(0,np.shape(dat)[1]-1)
+	while np.isnan(dat[yc,xc])==True:
+		yc=np.random.randint(0,np.shape(dat)[0]-1)
+		xc=np.random.randint(0,np.shape(dat)[1]-1)
+	
 	#Set random amplitude for the gaussian (in magnitudes)
-	mag=np.random.uniform(14,29)
+	mag=np.random.uniform(17,28)
 	#Convert magnitude to flux(uJy) then to flux (MJy/sr) divide by 4 and make the source 4 pixels in range
 	F=10**((mag-23.9)/-2.5)
 	f=F/fact
@@ -29,16 +33,10 @@ def simulated(zeromat,dat,header):
 	sigmax=sigmay=1.7/(2*np.sqrt(2*log(2)))/0.6
 	
 	#Create the Gaussian Matrix
-	#different size objects depending on brightness (NEEDS CHANGING, OBJECTS TOO SMALL)
-	if mag>24:
-		r=int(5*sigmax)
-	if mag<=24 and mag>20:
-		r=int(30*sigmax)
-	if mag<=20:
-		r=int(75*sigmax)
-	G=0
-	for i in range(r):
-		for j in range(r):
+	r = 10*1.7 #(5 * FWHM of Spitzer in radius)
+	G=0 
+	for i in range(int(round(r))):
+		for j in range(int(round(r))):
 			x=xc-i
 			y=yc-j
 			g=Gaussian2d(x,y,f,xc-2,yc-2,sigmax,sigmay)
@@ -50,7 +48,7 @@ def simulated(zeromat,dat,header):
 	
 	#Find RA and DEC in J2000 coordinates using the header from the original mosaic
 	w=wcs.WCS(header[0].header)
-	pixcoord=[[xc-2,yc-2]]
+	pixcoord=[[xc,yc]]
 	coords=np.array(pixcoord)
 	world=w.wcs_pix2world(coords,0)  
 	ra=world[0][0]
@@ -59,7 +57,7 @@ def simulated(zeromat,dat,header):
 	############################ Write to ASCII file #########################################################
 	############### CAUTION:: Will append to any file with the name below so be sure that the name of the file in the open() statement is correct!! #################################
 	infile=open('position.ascii','a')
-	infile.write(str(ra)+'\t'+str(dec)+'\t'+str(magreal)+'\t'+str(G)+'\n')
+	infile.write(str(ra)+'\t'+str(dec)+'\t'+str(magreal)+'\t'+str(G)+'\t'+str(xc)+'\t'+str(yc)+'\n')
 	infile.close()
 	info=[ra,dec,magreal,G]
 	print info
@@ -71,13 +69,17 @@ def simulated(zeromat,dat,header):
 dat= pf.open('aor3_ch1_mosaic.fits')[0].data
 header=pf.open('aor3_ch1_mosaic.fits')
 sim=np.zeros(np.shape(dat))
-for i in range(5000):
+for i in range(4000):
 	simulated(sim,dat,header)
 	
 
 new=dat+sim
 hdulist=pf.PrimaryHDU(data=new,header=header[0].header)
 hdulist.writeto('aor3_ch1_mosaic_simsource.fits')
+
+
+
+
 
 ##################PYTHON TEST PLOTTING###################################
 '''
