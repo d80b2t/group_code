@@ -2,7 +2,9 @@
 
 The beginnings of python code to generate sources in the SpIES mosaics to calculate completeness.
 The code is documented, so have a look at the file before running, however, you will need:
+
 1. A mosaic.fits file (which you will need to adjust the name in the python file)
+ 
 2. The empty version of the position.ascii file (which you will need to clear before running as well)
   - Important note: The first line in the position.ascii file should ALWAYS be as follows::
     # RA DEC MAG FLUX
